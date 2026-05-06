@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}   
+body
+{
+    background: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle
+{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+  animation: rotate-right 1s linear infinite;
+}
+.circle2
+{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background:transparent ;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  animation: rotate-left 1s linear infinite;
+}
+
+
+@keyframes rotate-right
+{
+  to{rotate: 360deg;}
+}
+
+@keyframes rotate-left
+{
+  from{rotate: 360deg;}
+  to{rotate: 0deg;}
+}
